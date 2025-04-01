@@ -11,67 +11,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om oss</title>
+    <link rel="stylesheet" href="style\style.css">
 
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <img src="images\Office.jpg" alt="Centered Image" width="500" height="350"> 
-    </div>        
-    <h1 style="text-align: center; border: 2px solid black;">Skrot och Korn AB </h1>
-    
-    <div style="text-align: center;">
+    <div id="Background"></div>
+    <script>
+        fetch("Background.html")
+            .then(response => response.text()) 
+            .then(data => document.getElementById("Background").innerHTML = data) 
+            .catch(error => console.error("Error loading menu:", error));
+    </script>
 
-        <div style="display: flex; justify-content: center; column-gap: 125px;">
-            <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                <a href="index.html"> Hem</a>
-             </div>
-            <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-               <a href="products.html"> Produkter</a>
-            </div>
-            <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                <a href="aboutus.html" >Om oss</a>
-            </div>
-            <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                <a href="media.html">Media</a>
-            </div>
-            <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                <a href="contactus.html">Kontakta oss</a>
-            </div>
-        </div>
-        <h3 style="text-align: center; border: 2px solid black;">Om oss</h3>
 
-        <h3>Skrot och Korn AB – Bakgrund och Miljöarbete</h3>
+        
+<div class="container moveFurtherDown">
+    <div class="box left">
+        <h2>Grundandet av Skrot och Korn AB</h2>
+        <p>Skrot och Korn AB startade som en liten familjeägd verksamhet med en enkel idé: att ge nytt liv åt gamla material. Företaget grundades av entusiaster med en passion för återbruk och hållbarhet, med målet att minska avfall och främja återvinning.       
+        </p>
+    </div>
+    <div class="box right">
+        <h2>Utveckling och Tillväxt</h2>
+        <p>Från att ha börjat med en liten skrotgård har företaget vuxit till en modern återvinningscentral. Genom investeringar i teknik och samarbeten med industrin kan vi idag hantera allt från metaller och elektronik till fordonsskrot och byggmaterial.
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="box left">
+        <h2>Miljöfokus och Hållbarhet</h2>
+        <p>Skrot och Korn AB arbetar aktivt för en grönare framtid genom att minska avfallsmängden och återanvända material så långt det är möjligt. Vi följer strikta miljöregler och samarbetar med lokala aktörer för att säkerställa att skrot och avfall hanteras på ett ansvarsfullt sätt.
+        </p>
+    </div>
+    <div class="box right">
+        <h2>Innovation och Framtidsvision</h2>
+        <p>Företaget strävar efter att ständigt utvecklas genom nya återvinningstekniker och effektiva processer. Vår vision är att bli en ledande aktör inom hållbar materialhantering och inspirera andra att se skrot som en resurs istället för avfall.
+        </p>
+    </div>
+</div>
 
-    </div>
-    <br>
-    <br>
-    <div style="display: flex; justify-content: space-between; width: 55%; margin: 0 auto; padding: 5px;">
-         <h3>Grundandet av Skrot och Korn AB</h3>
-         <h3 style="left: 2 px;">Utveckling och Tillväxt</h3>
-    </div>
-
-    <div style="display: flex; justify-content: space-between; width: 60%; margin: 0 auto; padding: 5px;">
-            
-        <div style="border: 2px solid black; padding: 20px; width: 30%; box-sizing: border-box;">
-            Skrot och Korn AB startade som en liten familjeägd verksamhet med en enkel idé: att ge nytt liv åt gamla material. Företaget grundades av entusiaster med en passion för återbruk och hållbarhet, med målet att minska avfall och främja återvinning.        </div>
-    
-        <div style="border: 2px solid black; padding: 20px; width: 30%; box-sizing: border-box;">
-            Från att ha börjat med en liten skrotgård har företaget vuxit till en modern återvinningscentral. Genom investeringar i teknik och samarbeten med industrin kan vi idag hantera allt från metaller och elektronik till fordonsskrot och byggmaterial.        </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; width: 55%; margin: 0 auto; padding: 5px;">
-        <h3>Miljöfokus och Hållbarhet</h3>
-        <h3>Innovation och Framtidsvision</h3>
-   </div>
-    <div style="display: flex; justify-content: space-between; width: 60%; margin: 0 auto; padding: 5px;">
-           
-          
-        <div style="border: 2px solid black; padding: 20px; width: 30%; box-sizing: border-box;">
-            Skrot och Korn AB arbetar aktivt för en grönare framtid genom att minska avfallsmängden och återanvända material så långt det är möjligt. Vi följer strikta miljöregler och samarbetar med lokala aktörer för att säkerställa att skrot och avfall hanteras på ett ansvarsfullt sätt.        </div>
-    
-        <div style="border: 2px solid black; padding: 20px; width: 30%; box-sizing: border-box;">
-            Företaget strävar efter att ständigt utvecklas genom nya återvinningstekniker och effektiva processer. Vår vision är att bli en ledande aktör inom hållbar materialhantering och inspirera andra att se skrot som en resurs istället för avfall.        </div>
-    </div>
 
     <iframe width="425" height="350" src="foretaginfo.html" style="border: 0;" ></iframe>
 </body>

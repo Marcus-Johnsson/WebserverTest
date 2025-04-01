@@ -1,70 +1,35 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <style>
-            body {
-          height: 100vh;
-          margin: 0;
-          background: radial-gradient(circle, white 10%, grey 100%);
-        }
-        </style>
-        <title>Första webbsidan</title>
-    </head>
-    <body>
-        
 
-        
-        <div style="text-align: center;">
-            <img src="images\Office.jpg" alt="Centered Image" width="500" height="350"> 
-        </div>        
-        <h1 style="text-align: center; border: 2px solid black;">Skrot och Korn AB </h1>
-        
-        <div style="text-align: center;">
+<head>
+    <title>Första webbsidan</title>
+    <link rel="stylesheet" href="style\style.css">
+</head>
+<body>
+    <div id="Background"></div>
+    <script>
+        fetch("Background.html")
+            .then(response => response.text()) 
+            .then(data => document.getElementById("Background").innerHTML = data) 
+            .catch(error => console.error("Error loading menu:", error));
+    </script>
 
-            <div style="display: flex; justify-content: center; column-gap: 125px;">
-                <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                    <a href="index.html"> Hem</a>
-                 </div>
-                <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                   <a href="products.html"> Produkter</a>
-                </div>
-                <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                    <a href="aboutus.html" >Om oss</a>
-                </div>
-                <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                    <a href="media.html">Media</a>
-                </div>
-                <div style="border: 2px solid black; padding: 10px; margin: 5px; width: 222px;">
-                    <a href="contactus.html">Kontakta oss</a>
-                </div>
+
+        <div class="container moveFurtherDown">
+            <div class="box left">
+                <h2>Skrot och Korn AB - Tjänster</h2>
+                <p>Skrot och Korn AB erbjuder tjänster inom skrotåtervinning, demontering och miljövänlig hantering av
+                    avfall. Vi hjälper företag och privatpersoner att effektivt bli av med skrot och återvinna material
+                    för en hållbar framtid.</p>
             </div>
-            <h3 style="text-align: center; border: 2px solid black;">Hem
-
-        </div>
-        <br>
-        <br>
-
-       
-        <div style="display: flex; justify-content: space-between; width: 50%; margin: auto; padding: 15px;">
-            <h3 style="margin-left:-50px;">Skrot och Korn - Tjänster</h3>
-            <h3 style="margin-right: 100px;"> Om oss</h3>
-        </div>
-     
-
-        <div style="display: flex; justify-content: space-between; width: 60%; margin: 0 auto; padding: 5px;">
-            
-            <div style="border: 2px solid black; padding: 20px; width: 30%; box-sizing: border-box;">
-                Skrot och Korn AB erbjuder tjänster inom skrotåtervinning, demontering och miljövänlig hantering av avfall. Vi hjälper företag och privatpersoner att effektivt bli av med skrot och återvinna material för en hållbar framtid.
-            </div>
-        
-            <div style="border: 2px solid black; padding: 20px; width: 30%; box-sizing: border-box;">
-                Skrot och Korn AB är ett innovativt företag som fokuserar på att erbjuda miljövänliga lösningar för återvinning och skrotåtervinning. Vi strävar efter att bidra till en cirkulär ekonomi genom att omvandla skrot till användbara resurser.
+            <div class="box right">
+                <h2>Om Skrot och Korn AB</h2>
+                <p>Skrot och Korn AB är ett innovativt företag som fokuserar på att erbjuda miljövänliga lösningar för
+                    återvinning och skrotåtervinning. Vi strävar efter att bidra till en cirkulär ekonomi genom att
+                    omvandla skrot till användbara resurser.</p>
             </div>
         </div>
-        <iframe width="425" height="350" src="foretaginfo.html" style="border: 0;" ></iframe>
 
+</body>
 
-
-
-    </body>
 </html>
