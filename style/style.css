@@ -1,4 +1,4 @@
-x {
+x{
     border-color: red;
     border-style: solid;
 }
@@ -13,8 +13,7 @@ a {
     background-color: rgb(10, 66, 40);
     padding: 1em;
     border-radius: 10px;
-
-
+    text-decoration: none;
     color: goldenrod;
 }
 
@@ -78,14 +77,6 @@ h3 {
     background-color: rgb(10, 66, 40);
     border-style: double;
     margin: 2em;
-}
-
-.left {
-    text-align: auto;
-}
-
-.right {
-    text-align: auto;
 }
 
 .table {
@@ -153,5 +144,33 @@ td {
     margin-left: -15%;
 }
 
+.contactus
+{
+    display: flex;
+    color: goldenrod;
+    width: 25%;
+    height: 22%;
+    border: 1em;
+    border-color: beige;
+    background-color: rgb(56, 82, 112);
+    border-style: double;
+    margin-left: 10%;
+    margin-bottom: 2em;
+}
+.contactprofile
+{
+    width:10em;
+    height:10em;
+    margin-left: 2em;
+    margin-top: 1.5em;
+}
+.contactbuttons {
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 10px;
 
-
+}
+.contact-info {
+    margin-left: 1em;
+   margin-top: 2em;
+}
