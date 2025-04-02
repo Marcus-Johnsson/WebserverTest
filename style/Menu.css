@@ -1,0 +1,118 @@
+x{
+    border-color: red;
+    border-style: solid;
+}
+
+
+div{
+    opacity: 90%;
+    background-color: gainsboro;
+    margin: 1px;
+    padding: 2px;
+}
+#searchbar{
+    position: relative;
+    
+    
+}
+#searchbutton:hover{
+       color:black;
+       background-color: burlywood;
+        border-style: inset;
+}
+#searchbutton{
+    position: relative;
+    left: 60%;
+    color: black;
+    background-color:burlywood;
+    border-style: outset;
+    padding: 5px;
+}
+.sticky{
+    position: sticky;
+}
+.menubuttons {
+    margin-left: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(10, 66, 40);
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: goldenrod;    
+}
+.fotterbuttons{
+    
+    color: gray;
+    opacity: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    background-color: bisque;
+    color: black;
+}
+@media(min-width: 601px)
+{
+    header, main, footer
+    {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media(max-width: 600px)
+{
+    header, main, footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.row
+{
+    flex-basis: 100vw;
+    
+}
+.left{
+    flex-basis: 50vw;
+}
+.rest1{
+    flex: 1;
+}
+.rest2{
+    flex: 2;
+}
+
+.rest5{
+    flex: 5;
+}
+#sokab{
+ text-align: center;
+ color: green;
+}
+body{
+    background-image: url("../images/trashforest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.ecoside{
+    position: relative;
+    font-size:larger;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ecopicture{
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 100%;
+    border-style:solid;
+    border-radius: 10%;
+    border-width: 1px;
+}
