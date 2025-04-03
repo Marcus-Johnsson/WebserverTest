@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-    <style>
-        body {
-      height: 100vh;
-      margin: 0;
-      background: radial-gradient(circle, white 10%, grey 100%);
-    }
-    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om oss</title>
@@ -16,42 +11,69 @@
 </head>
 
 <body>
-    <div id="Background"></div>
+    <div id="headermenu"></div>
     <script>
-        fetch("Background.html")
-            .then(response => response.text()) 
-            .then(data => document.getElementById("Background").innerHTML = data) 
+        fetch("headermenu.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("headermenu").innerHTML = data)
             .catch(error => console.error("Error loading menu:", error));
     </script>
 
+    <header>
+        <div class="rest2"></div>
 
+        <div class=" rest2">
+            <div class="boxaboutus">
+                <h2>Grundandet av Skrot och Korn AB</h2>
+                <p>Skrot och Korn AB startade som en liten familjeägd verksamhet med en enkel idé: att ge nytt liv åt
+                    gamla material. Företaget grundades av entusiaster med en passion för återbruk och hållbarhet, med
+                    målet att minska avfall och främja återvinning.
+                </p>
+            </div>
+           
+            <img class="widepicture" src="/images/Untitled design.png" alt="office">
+        </div>
         
-<div class="container moveFurtherDown">
-    <div class="box">
-        <h2>Grundandet av Skrot och Korn AB</h2>
-        <p>Skrot och Korn AB startade som en liten familjeägd verksamhet med en enkel idé: att ge nytt liv åt gamla material. Företaget grundades av entusiaster med en passion för återbruk och hållbarhet, med målet att minska avfall och främja återvinning.       
-        </p>
-    </div>
-    <div class="box">
-        <h2>Utveckling och Tillväxt</h2>
-        <p>Från att ha börjat med en liten skrotgård har företaget vuxit till en modern återvinningscentral. Genom investeringar i teknik och samarbeten med industrin kan vi idag hantera allt från metaller och elektronik till fordonsskrot och byggmaterial.
-        </p>
-    </div>
-</div>
-<div class="container">
-    <div class="box">
-        <h2>Miljöfokus och Hållbarhet</h2>
-        <p>Skrot och Korn AB arbetar aktivt för en grönare framtid genom att minska avfallsmängden och återanvända material så långt det är möjligt. Vi följer strikta miljöregler och samarbetar med lokala aktörer för att säkerställa att skrot och avfall hanteras på ett ansvarsfullt sätt.
-        </p>
-    </div>
-    <div class="box">
-        <h2>Innovation och Framtidsvision</h2>
-        <p>Företaget strävar efter att ständigt utvecklas genom nya återvinningstekniker och effektiva processer. Vår vision är att bli en ledande aktör inom hållbar materialhantering och inspirera andra att se skrot som en resurs istället för avfall.
-        </p>
-    </div>
-</div>
+        <div class=" rest2">
+            <div class="boxaboutus">
+                <h2>Miljöfokus och Hållbarhet</h2>
+                <p>Företaget strävar efter att ständigt utvecklas genom nya återvinningstekniker och effektiva
+                    processer. Vår vision är att bli en ledande aktör inom hållbar materialhantering och inspirera andra
+                    att se skrot som en resurs istället för avfall.
+                </p>
+            </div>
+
+           
+        </div>
+        <div class=" rest2">
+            <div class="boxaboutus">
+                <h2>Innovation och Framtidsvision</h2>
+                <p>Skrot och Korn AB arbetar aktivt för en grönare framtid genom att minska avfallsmängden och
+                    återanvända material så långt det är möjligt. Vi följer strikta miljöregler och samarbetar med
+                    lokala aktörer för att säkerställa att skrot och avfall hanteras på ett ansvarsfullt sätt.
+                </p>
+            </div>
+            <div class="boxaboutus">
+                <h2>Utveckling och Tillväxt</h2>
+                <p>Från att ha börjat med en liten skrotgård har företaget vuxit till en modern återvinningscentral.
+                    Genom investeringar i teknik och samarbeten med industrin kan vi idag hantera allt från metaller och
+                    elektronik till fordonsskrot och byggmaterial.
+                </p>
+
+            </div>
+        </div>
 
 
-    <iframe width="425" height="350" src="foretaginfo.html" style="border: 0;" ></iframe>
+        <div class="rest2"></div>
+    </header>
+
+    <div id="fottermenu"></div>
+    <script>
+        fetch("fottermenu.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("fottermenu").innerHTML = data)
+            .catch(error => console.error("Error loading menu:", error));
+    </script>
 </body>
+
 </html>

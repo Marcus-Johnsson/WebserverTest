@@ -81,5 +81,9 @@ a:hover {
 #sokab{
  text-align: center;
  color: green;
+ border-style: double;
+ border-width: 0.5em;
+ width: 55%;
+ margin-left: 20%;
 }
 
