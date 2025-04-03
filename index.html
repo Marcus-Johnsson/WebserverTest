@@ -4,16 +4,18 @@
 <head>
     <title>Första webbsidan</title>
     <link rel="stylesheet" href="style\style.css">
+
 </head>
 <body>
-    <div id="Background"></div>
+   
+    <div id="headermenu"></div>
     <script>
-        fetch("Background.html")
+        fetch("headermenu.html")
             .then(response => response.text()) 
-            .then(data => document.getElementById("Background").innerHTML = data) 
+            .then(data => document.getElementById("headermenu").innerHTML = data) 
             .catch(error => console.error("Error loading menu:", error));
     </script>
-
+  <br> <br> <br> <br>
 
         <div class="container moveFurtherDown">
             <div class="box">
@@ -28,8 +30,14 @@
                     återvinning och skrotåtervinning. Vi strävar efter att bidra till en cirkulär ekonomi genom att
                     omvandla skrot till användbara resurser.</p>
             </div>
-        </div>
-
+        </div> <br> <br> <br> <br><br> <br> <br><br>
+        <div id="fottermenu"></div>
+        <script>
+            fetch("fottermenu.html")
+                .then(response => response.text()) 
+                .then(data => document.getElementById("fottermenu").innerHTML = data) 
+                .catch(error => console.error("Error loading menu:", error));
+        </script>
 </body>
 
 </html>
