@@ -1,13 +1,13 @@
-x{
+x {
     border-color: red;
     border-style: solid;
 
 }
 
-body{
+body {
     background-image: url("../images/trashforest.jpg");
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
 }
 
 
@@ -18,7 +18,7 @@ body{
     border-radius: 10em;
 }
 
-.widepicture{
+.widepicture {
     position: relative;
     height: 40%;
     width: 180%;
@@ -38,7 +38,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding: 20px;    
+    padding: 20px;
 }
 
 
@@ -55,6 +55,7 @@ body{
     margin-bottom: 1%;
     margin-top: 5%;
 }
+
 .boxaboutus {
     color: goldenrod;
     width: 65%;
@@ -68,22 +69,28 @@ body{
     margin-bottom: 1%;
     margin-top: 5%;
 }
-.picture{
+
+.picture {
     position: relative;
     left: 20%;
-    width: 60%;   
+    width: 60%;
 }
-.marginalpicture{
+
+.marginalpicture {
     display: flex;
     width: 90%;
     top: 10%;
     margin-bottom: 10%;
 
-    
+
 }
-@media(min-width: 601px)
-{
-    header, main, footer
+
+@media(min-width: 601px) {
+
+    header,
+    main,
+    footer,
+    .flex
     {
         display: flex;
         flex-direction: row;
@@ -91,26 +98,28 @@ body{
 }
 
 
-@media(max-width: 600px)
-{
-    header, main, footer
+@media(max-width: 600px) {
+
+    header,
+    main,
+    footer,
+    .flex
     {
         display: flex;
         flex-direction: column;
     }
 }
 
-.boxtext
-{
-    display: flex; 
-    align-items: center; 
-    padding: 2em;
+.boxtext {
+    display: flex;
+    align-items: center;
+    padding: 5%;
     width: 100%;
     gap: 3em;
 }
 
 .boxvideo {
-    
+
     color: goldenrod;
     width: 55%;
     border: 1em;
@@ -120,8 +129,7 @@ body{
     margin-left: 10%;
 }
 
-.video
-{
+.video {
     margin-left: -15%;
 }
 
@@ -129,14 +137,15 @@ body{
     font-weight: bold;
     width: 50%;
 }
+
 .info {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     padding: 5px 0;
 }
-.contactus
-{
+
+.contactus {
     display: flex;
     color: goldenrod;
     width: 25%;
@@ -148,26 +157,29 @@ body{
     margin-left: 10%;
     margin-bottom: 2em;
 }
-.contactprofile
-{
-    width:10em;
-    height:10em;
+
+.contactprofile {
+    width: 10em;
+    height: 10em;
     margin-left: 2em;
     margin-top: 1.5em;
 }
+
 .contactbuttons {
     text-decoration: none;
     padding: 1em;
     border-radius: 10px;
 
 }
+
 .contact-info {
     margin-left: 1em;
-   margin-top: 2em;
+    margin-top: 2em;
 }
-.marginal{
+
+.marginal {
     position: relative;
     text-align: center;
-    color:green;
+    color: green;
     opacity: 80%;
 }

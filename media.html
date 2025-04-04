@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="style\style.css">
 </head>
 <body>
-    <div id="Background"></div>
+    <div id="headermenu"></div>
     <script>
-        fetch("Background.html")
+        fetch("headermenu.html")
             .then(response => response.text()) 
-            .then(data => document.getElementById("Background").innerHTML = data) 
+            .then(data => document.getElementById("headermenu").innerHTML = data) 
             .catch(error => console.error("Error loading menu:", error));
     </script>
+    <br>
     
-    <div class="boxvideo moveFurtherDown">
+    <header>
+        <div class="rest2"></div>
+        <div class="rest5">
+            
+             <div class="boxvideo">
         <div class="boxtext">
             <div>
                 <h2>Hur en bulldozer fungerar</h2>
@@ -23,23 +28,34 @@
                     Den här videon visar hur en bulldozer arbetar, från hur den använder sina larvfötter för att ta sig fram i tuff terräng till hur dess stora blad skjuter undan jord, grus och annat material. Du får se bulldozern i aktion på en byggarbetsplats och en förklaring av dess viktigaste funktioner!
                 </p>
             </div>
-            <div class="right">
+            <div >
                 <iframe class="video" src="https://www.youtube.com/embed/hJIBp98DztA?si=nWny8jFHWhKyP7Bx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
+    <br>
     <div class="boxvideo">
         <div class="boxtext">
             <div>
                 <h2>En ovanlig kafferast-idé?</h2>
                 <p>Istället för att scrolla på telefonen eller småprata vid kaffemaskinen, varför inte se en grävmaskin snurra runt ett flygplan? Den här videon bjuder på en oväntad kombination av teknik och underhållning – perfekt för en kort paus som ger både ett skratt och lite fascination! 
             </div>
-            <div class="right">
+            <div>
                 <iframe class="video" src="https://www.youtube.com/embed/X0kYbTHQdLs?si=3VsU6Wl0vWYUk1fu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
-    <iframe width="425" height="350" src="foretaginfo.html" style="border: 0;" ></iframe>
+        </header>
+        <div class="rest2"></div>
+    </header>
+   
+<br>
+    <div id="fottermenu"></div>
+    <script>
+        fetch("fottermenu.html")
+            .then(response => response.text()) 
+            .then(data => document.getElementById("fottermenu").innerHTML = data) 
+            .catch(error => console.error("Error loading menu:", error));
+    </script>
 </body>
 </html>
